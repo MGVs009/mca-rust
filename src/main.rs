@@ -16,7 +16,7 @@ fn get_palette_index(data: &[i64], block_index: usize, bits_per_block: usize) ->
 }
 
 fn main() {
-    let caminho_folder = r"C:\Users\marti\AppData\Roaming\.minecraft\saves\New World (9)\dimensions\minecraft\overworld\region\";//Input the path to a regions file in a minecraft save
+    let caminho_folder = r"";//Input the path to a regions file in a minecraft save
     let mut output = File::create("setblocks.txt").expect("Failed to create scheme.txt");
 
     let detetar_ar = false;
