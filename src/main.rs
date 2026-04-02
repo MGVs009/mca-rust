@@ -31,7 +31,6 @@ fn main() {
             }
 
             println!("{}", caminho);
-
             let mut file = match File::open(path) {
                 Ok(f) => f,
                 Err(_) => continue,
