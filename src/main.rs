@@ -17,8 +17,7 @@ fn get_palette_index(data: &[i64], block_index: usize, bits_per_block: usize) ->
 
 fn main() {
     let caminho_folder = r"";//Input the path to a regions file in a minecraft save
-    let mut output = File::create("setblocks.txt").expect("Failed to create scheme.txt");
-
+    let mut output = File::create("setblocks.txt").expect("Failed to create scheme.txt"); //This file will store: a block's id (in the format minecraft:material) and the position in posX posY posZ, using the syntaxe of minecraft setblock: setblock posX posY posZ minecraft:material  
     let detetar_ar = false;
 
     for primeiro_numero in -32..32 {
